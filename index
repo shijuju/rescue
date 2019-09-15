@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>趙禕 ZHAOYI</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+	<div class="open"><img src="images/open1.png" alt=""></div>
+	<main>
+		<ul>
+			<li><a href="profile.html">profile</a></li>
+		</ul>
+		<p>TOKYO<br>DESIGN<br>ACADEMY<br>ZHAOYI’s  PORTFOLIO</p>
+		<ul>
+			<li><a href="works.html">works</a></li>
+		</ul>
+	</main>
+	<div class="menubtn"></div>
+	<div class="menuafter"></div>
+	<div class="menu">
+			<div class="menuleft">
+			<li><a href="index.html">Home</a></li>
+			<li class="profile"><a href="profile.html">Profile</a></li>
+			</div><!--left-->
+			<li class="works"><a href="works.html">Works</a></li>
+			<div class="menuright">
+			<li><a href="#">Web Design</a></li>
+			<li><a href="ad.html">Advertising</a></li>
+			<li><a href="#">Package</a></li>
+			<li><a href="#">Others</a></li>
+			<li><a href="#"></a></li>
+			</div><!--right-->
+	</div><!--menu-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('.open').css('display','none').fadeIn(1500);
+		$('.white').show(3500,'fast');
+		$('.menubtn').on({
+			'click':function(){
+				$('.menubtn').toggleClass('menubtnc');
+				$('.menu').toggleClass('menuafter');
+				$('.open').toggle(500);
+			}
+		});
+	</script>
+</body>
+</html>
