@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	font-size: 62.5%;
+}
+a{
+	text-decoration: none;
+}
+.menubtn{
+	color: #DA0003;
+	position: absolute;
+	z-index: 10;
+	top: 50px;
+	right: 50px;
+	font-size: 3rem;
+	font-family: "Font Awesome 5 Free";
+  	content: '\f0c9';
+	font-weight: 700;
+}
+.menubtnc{
+	font-size: 3rem;
+	z-index: 10;
+}
+.menubtn::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0c9';
+  font-weight: 700;
+}
+.menubtnc::before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f00d';
+  font-weight: 700;
+}
+.menu{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: #626262;
+	top: -200vh;
+	transition: 1s all;
+	z-index: 7;
+	overflow: hidden;
+}
+.menu li{
+	list-style: none;
+}
+.menu li a{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 5rem;
+	line-height: 8rem;
+	font-weight: 700;
+	color: #171717;
+}
+.works{
+	position: absolute;
+	top: 15%;
+	right: 40%;
+}
+.menuleft{
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	bottom: 15%
+}
+.menuright{
+	position: absolute;
+	top: 25%;
+	right: 15%;
+	bottom: 15%
+}
+.menuafter{
+	top: 0px;
+}
